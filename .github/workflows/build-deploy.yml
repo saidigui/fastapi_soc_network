@@ -1,0 +1,12 @@
+name: Build and deploy fastapi-soc-network
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pulling git repository
+        uses: actions/checkout@v2
+      - name: testing fastapi-soc-network
+        run: echo "testing fastapi-soc-network"
