@@ -5,7 +5,7 @@ from app.config import settings
 
 def test_root(client):
     response = client.get("/")
-    assert response.json() == {"message": "Welcome to my API for Social Network"}
+    assert response.json() == {"message": "Welcome to my API for Social Network deployment CI/CD test with GitHub Actions ..."}
     assert response.status_code == 200
 
 def test_create_user(client):
