@@ -21,4 +21,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to my API for Social Network"}
+    return {"message": "Welcome to my API for Social Network deployment CI/CD test with GitHub Actions"}
